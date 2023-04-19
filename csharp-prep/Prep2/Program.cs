@@ -41,13 +41,13 @@ class Program
 
         Console.WriteLine($"Your grade is: {letterGrade}");
 
-        if (gradeNum >= 70)
-        {
-            Console.WriteLine("Congratulations! You passed!");
-        }
-        else 
-        {
-            Console.WriteLine("Better luck next time.");
-        }
+        // if (gradeNum >= 70)
+        // {
+        //     Console.WriteLine("Congratulations! You passed!");
+        // }
+        // else 
+        // {
+        //     Console.WriteLine("Better luck next time.");
+        // }
     }
 }
