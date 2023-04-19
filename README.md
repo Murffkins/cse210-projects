@@ -1,5 +1,5 @@
 # cse210-student-template
-This is the starter code for Nicole Murff in CSE 210.
+This is the starter code for Murffkins in CSE 210.
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
