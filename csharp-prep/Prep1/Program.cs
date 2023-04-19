@@ -6,6 +6,7 @@ class Program
     {
         Console.WriteLine("Hello Prep1 World!");
 
+        // James Bond-style name prompt
         Console.Write("What is your first name? ");
         string fName = Console.ReadLine();
 
