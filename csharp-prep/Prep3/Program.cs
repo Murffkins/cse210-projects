@@ -49,13 +49,7 @@ class Program
                 attempts += 1;
                 Console.WriteLine($"You guessed it in {attempts} attempts!");
             }
-        }
-
-        
-
-        // Ask if user wants to play again
-
-        // If 'yes', loop back and play again until user says 'no'       
+        }    
 
     }
 }
