@@ -6,6 +6,17 @@ class Program
     {
         Console.WriteLine("Hello Prep3 World!");
 
+        do 
+        {
+            PlayGame();
+            Console.WriteLine("Would you like to play again? Y or N ");
+        } while (Console.ReadLine().ToLower() == "y");
+        
+
+    }
+    private static void PlayGame()
+    {
+    
         // Ask user for magic number
         // Console.Write("What is the magic number? ");
         // int userMagicNum = int.Parse(Console.ReadLine());
