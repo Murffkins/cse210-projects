@@ -31,23 +31,22 @@ class Program
         int max = numbers.Max();
         Console.WriteLine($"The largest number is: {max}");
 
-        int minNum = 1;
-        // for (int i = 0; i < numbers.Count; i++)
-        // {
-        //     if (numbers[i] < minNum && numbers[i] > 0)
-        //     {
-        //         minNum = numbers[i];
-        //     }
-        // }
-        foreach (int number in numbers)
+        int minNum = int.MaxValue;
+        for (int i = 0; i < numbers.Count; i++)
         {
-            if (number > 0)
+            if (numbers[i] < minNum && numbers[i] > 0)
             {
-                minNum = numbers.Min();
+                minNum = numbers[i];
             }
-            
         }
+
         Console.WriteLine($"The smallest positive number is: {minNum}");
+        numbers.Sort();
+        Console.WriteLine($"The sorted list is:");
+        foreach (int i in numbers)
+        {
+            Console.WriteLine(i);
+        }
         
     }
 }
