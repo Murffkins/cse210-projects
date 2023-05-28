@@ -7,7 +7,12 @@ class Word{
 
     }
 
-    private string _index;
+    public Word(string text, int index){
+        this._text = text;
+        this._index = index;
+    }
+
+    private int _index;
     private bool _isHidden;
     private string _text;
 
@@ -24,6 +29,14 @@ class Word{
         public bool IsHidden()
     {
         return _isHidden;
+    }
+
+    public int GetIndex() {
+        return this._index;
+    }
+
+    public string GetText() {
+        return this._text;
     }
 
         public string GetRenderedText()
