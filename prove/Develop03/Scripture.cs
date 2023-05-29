@@ -115,7 +115,7 @@ class Scripture
 
             case 5:
             this._reference = new Reference("Proverbs", 27, 15, 16);
-            this._text = "15. A continual dropping is a very rainy day and a contentious woman are alike. 16. Whosoever hideth her hideth the wond, and the ointment of his right hand, which bewrayeth itself.";
+            this._text = "15. A continual dropping in a very rainy day and a contentious woman are alike. 16. Whosoever hideth her hideth the wind, and the ointment of his right hand, which bewrayeth itself.";
             return this._text;
         }
 
