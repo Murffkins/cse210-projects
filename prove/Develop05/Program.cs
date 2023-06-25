@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.BackgroundColor = ConsoleColor.DarkBlue;
+        Console.ForegroundColor = ConsoleColor.White;
+
         string userMenuChoice = string.Empty;
         GoalManager goalManager = new GoalManager();
 
