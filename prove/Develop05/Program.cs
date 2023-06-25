@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Added color for creativity credit
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         Console.ForegroundColor = ConsoleColor.White;
 
