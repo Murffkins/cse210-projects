@@ -40,7 +40,7 @@ public class Video
             string commenterName = comment.GetCommenterName();
             string commentText = comment.GetCommentText();
 
-            Console.WriteLine($"{commenterName}:\n{commentText}");
+            Console.WriteLine($" * {commenterName}:\n   {commentText}");
         }
     }
 
@@ -56,7 +56,7 @@ public class Video
         int videoLength = GetVideoLength();
         int numOfComments = NumOfComments();
         Console.WriteLine($"{title} by {author} ({videoLength} seconds)");
-        Console.WriteLine($"There are {numOfComments} comments");
+        Console.WriteLine($"        There are {numOfComments} comments");
         DisplayComments();
         Console.WriteLine();
     }

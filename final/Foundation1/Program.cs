@@ -4,10 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Video video1 = new Video("It's just a flesh wound", "the Black Knight", 268);
-        Video video2 = new Video("Show us the Grail!", "Arthur, King of the Britains", 124);
-        Video video3 = new Video("The Bridge of Death", "Sir Lancelot", 117);
-        Video video4 = new Video("We Found a Witch!", "Town's People", 296);
+        Video video1 = new Video("'It\'s just a flesh wound'", "the Black Knight", 268);
+        Video video2 = new Video("'Show us the Grail!'", "Arthur, King of the Britains", 124);
+        Video video3 = new Video("'The Bridge of Death'", "Sir Lancelot", 117);
+        Video video4 = new Video("'We Found a Witch!'", "Town's People", 296);
 
         Comment video1_Comment1 = new Comment("Arthur, King of the Britains", "You're arm's off!");
         Comment video1_Comment2 = new Comment("the Black Knight", "'Tis but a scratch.");
