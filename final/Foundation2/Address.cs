@@ -23,10 +23,10 @@ public class Address
     }
 
     // Getter
-    public string GetAddress()
-    {
-        return $"{_streetAddress}, {_city}, {_stateProvince}, {_country}";
-    }
+    // public string GetAddress()
+    // {
+    //     return $"{_streetAddress}, {_city}, {_stateProvince}, {_country}";
+    // }
 
     // The address should have a method that can return whether it is in the USA or not.
     public bool IsUsa()
@@ -39,7 +39,7 @@ public class Address
     }
 
     // The address should have a method to return a string all of its fields together in one string (with newline characters where appropriate)
-    public string CompleteAddress()
+    public string DisplayCompleteAddress()
     {
         string address = $"{_streetAddress}\n{_city}, {_stateProvince}  {_country}";
         return address;

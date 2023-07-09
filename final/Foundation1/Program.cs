@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.BackgroundColor = ConsoleColor.DarkBlue;
+        Console.ForegroundColor = ConsoleColor.White;
+
+
         Video video1 = new Video("'It\'s just a flesh wound'", "the Black Knight", 268);
         Video video2 = new Video("'Show us the Grail!'", "Arthur, King of the Britains", 124);
         Video video3 = new Video("'The Bridge of Death'", "Sir Lancelot", 117);

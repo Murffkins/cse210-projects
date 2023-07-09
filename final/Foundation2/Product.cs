@@ -7,9 +7,12 @@ public class Product
     private double _price;
     private int _quantity;
 
-    public Product()
+    public Product(string name, int productId, double price, int quantity)
     {
-
+        _name = name;
+        _productId = productId;
+        _price = price;
+        _quantity = quantity;
     }
 
     // Don't need this method. Erase later
@@ -28,7 +31,7 @@ public class Product
     // Getter
     public string GetPackingLabel()
     {
-        return $"{_name}, {_productId}";
+        return $"   <{_quantity}>     {_name}({_productId})";
     }
 
     // The price of this product is computed by multiplying the price and the quantity.

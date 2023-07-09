@@ -1,58 +1,57 @@
 // Make sure that all member variables are private and getters, setters, and constructors are created as needed.
+using System.Text;
+
 public class Order
 {
     // Contains a list of products and a customer. Can calculate the total cost of the order, and can return a string for the packing label, and can return a string for the shipping label.
-    private List<Product> _products = new List<Product>();
+    private List<Product> _products;
+    // private Product product;
+    private Customer _customer;
+
     private double _price = 0;
-    private int _shipping = 5;
-    private Product product;
-    private Customer customer;
 
 
-    public Order()
+    public Order(Customer customer)
     {
-        product = new Product();
-        customer = new Customer();
+        _products = new List<Product>();
+        _customer = customer;
+    }
+
+    public void CreateProductList(Product product)
+    {
+        _products.Add(product);
     }
 
     // The total price is calculated as the sum of the prices of each product plus a one-time shipping cost ($5 for US citizens, $35 for non-US citizens).
     public double GetOrderCost()
     {
-        foreach (Product item in _products)
+        foreach (Product product in _products)
         {
-            _price += _price;
-            if (customer.UsCitizen() == true)
-            {
-                _price += _shipping;
-                return _price;
-            }
-            else
-            {
-                _shipping = 35;
-                _price += _shipping;
-                return _price;
-            }
+            _price += product.GetPrice();
         }
+        _price += _customer.GetShipping();
+
         return _price;
     }
 
     // A packing label should list the name and product id of each product in the order.
-    public void PackingLabel()
+    public string PackingLabel()
     {
-        foreach (Product item in _products)
+        StringBuilder s = new StringBuilder();
+        foreach (Product product in _products)
         {
-            Console.WriteLine(product.GetPackingLabel());
+            // Console.WriteLine(product.GetPackingLabel());
+            s.AppendLine(product.GetPackingLabel());
         }
+        return s.ToString();
 
     }
 
     // A shipping label should list the name and address of the customer
-    public void ShippingLabel()
+    public string ShippingLabel()
     {
-        foreach (Product item in _products)
-        {
-            Console.WriteLine(customer.GetShippingLabel());
-        }
+        return _customer.GetShippingLabel();
+
 
     }
 }
