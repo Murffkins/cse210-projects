@@ -57,7 +57,7 @@ public abstract class Event
     public void DisplayStandardMessage()
     {
         // Console.WriteLine($"Name of event: {_eventTitle}\n{_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address}");
-        Console.WriteLine($"Event name: \"{_eventTitle}\"\n\"{_description}\"\nDate: {_date}\nTime: {_time}\nAddress: {GetAddress()}");
+        Console.WriteLine($"Event name: \"{_eventTitle}\"\nDescription: \"{_description}\"\nDate: {_date}\nTime: {_time}\nAddress: {GetAddress()}");
     }
 
     public void DisplayShortMessage()
